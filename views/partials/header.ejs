@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GameHub <%=locals.title%></title>
+  <link rel="stylesheet" href="/css/style.css">
+  <%# 
+  C'est ici que l'on va vérifier si on a une information cssFile qui a été envoyé par la méthode render() en 2emle argument sous forme d'objet stocké dans une variable locals.
+  Ici on utilise la notation sous form d'objet car cela nous permet de vérifier l'existance d'un propriété au lieu d'une variable, car vérifier l'existance du variable qui n'existe pas génère une erreur. Alors que vérifier une propriété qui n'existe pas d'un objet qui existe renvoi "undefined" (falsy) et de génère pas d'erreurs
+
+  tips : locals existe TOUJOURS, qu'il y est ou non des informations transmise en 2eme argument de render()
+  %>
+  <% if(locals.cssFile) { %>
+    <%# comme j'inclu du html qui devra être écrit dans la réponse au client, je sépare l'ouverture et la fermeture de la condition dans 2 tags EJS différents %>
+    <link rel="stylesheet" href="/css/<%=cssFile%>">
+  <% } %>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="/">GameHub</a>
+    </h1>
+    <nav>
+      <ul>
+        <%# je peux exploiter le tableau contenu dans la variable "games" afin de générer l'ensemble des liens des jeux%>
+        <% for(const game of games) { %>
+          <%# ici dans game je me retrouve avec un objet qui contient les information de jeu %>
+          <li><a href="/game/<%=game.name%>"><%=game.title%></a></li>
+        <% } %>
+        <% if(locals.user) { %>
+        <li>
+          <a href="/logout">Déconnexion</a>
+        </li>
+        <% } else { %>
+          <li>
+            <a href="/login">Connexion</a>
+          </li>
+        <% } %>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <% if(locals.user) { %>
+      <p>Bienvenue <%=user.realname%></p>
+    <% } %>
+
+    <h3><%=locals.title%></h3>

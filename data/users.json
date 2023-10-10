@@ -1,0 +1,22 @@
+[
+    {
+        "username": "bobD",
+        "realname": "Paul Mc Cartney",
+        "password": "$2b$11$Ly3GNwbqeCmfkxoYZtBlg.hFSC3pu5gpvmINOGz6/TAixYzjDXbeS"
+    },
+    {
+        "realname": "John Lennon",
+        "password": "$2b$11$Y1kCJ2DKVK/MOBtN9ty8ZOwRmYLAjZ/cxJUP.E9aiYHGd5Sk0qyD2",
+        "username": "elvisP"
+    },
+    {
+        "realname": "George Harrison",
+        "username": "leonardC",
+        "password": "$2b$11$CFNB8x.96VVTAsbd1KicRO/xoz7ghryyDIhqP0XLzua3hRb6NN7Di"
+    },
+    {
+        "password": "$2b$11$5JZvEE2mrp1Bt89Ez/zpX.Nb1XNBLJShqw83j0qaSuzVZMLLmEg7a",
+        "username": "charlieW",
+        "realname": "Ringo Starr"
+    }
+]

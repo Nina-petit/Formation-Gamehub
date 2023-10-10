@@ -1,0 +1,14 @@
+<%- include('partials/header', {title: "Connexion"}) %>
+
+<% if(locals.message) { %>
+    <p><%=message%></p>
+  <% } %>
+  
+<form action="" method="POST">
+    <label for="user-name">Nom d'utilisateur</label>
+    <input type="text" name="username" id="user-name" placeholder="ex: root">
+    <label for="password">Mot de passe</label>
+    <input type="password" name="password" id="password" placeholder="ex: admin123">
+    <button type="submit">Connexion</button>
+  </form>
+<%- include('partials/footer') %>

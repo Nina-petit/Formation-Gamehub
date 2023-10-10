@@ -1,0 +1,25 @@
+{
+  "name": "S03-Atelier-duo-gamehub-Nina-petit",
+  "version": "1.0.0",
+  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Robin/S03-Atelier-duo-gamehub-Nina-petit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Robin/S03-Atelier-duo-gamehub-Nina-petit/issues"
+  },
+  "homepage": "https://github.com/O-clock-Robin/S03-Atelier-duo-gamehub-Nina-petit#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,28 @@
+
+<%- include('partials/header') %>
+<a id="home" href="/">HOME PAGE</a>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    main {
+        flex-grow: 1;
+        background: no-repeat center url("/images/error404.jpg");
+        background-color: black;
+    }
+    #home {
+        font-size: 1.5em;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 30px;
+    }
+</style>

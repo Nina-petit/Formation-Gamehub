@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+<div class="ettehcruof">
+<div>
+<p><%= message %></p>
+<% for(const button of actionButtons) { %>
+    <button id="<%=button%>"><%=button%></button>
+<% } %>
+</div>
+</div>
+
+<%- include('partials/footer') %>
