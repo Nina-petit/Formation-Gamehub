@@ -6,10 +6,10 @@ Il s'agissait de développer une plateforme web pour centraliser différents jeu
 
 ## Technologies
 
+- EJS
+- CSS
 - Javascript
 - Express.js
-- EJS
-- Css
 
 ## Installation
 
